@@ -1,0 +1,24 @@
+#
+# Git aliases. Enspired by https://github.com/ewancoder/dotfiles/blob/master/.zsh_aliases
+#
+
+#=== GIT ===
+alias ga='git add'
+alias gia='git add -A; git status'
+alias gic!='git commit -v --amend'
+alias gic='git commit -v'
+alias gica!='git commit -av --amend'
+alias gica='git commit -av'
+alias gid='git diff'
+alias gif='if [ "`ssh-add -L | grep github`" "==" "" ]; then github; fi; git fetch && git pull'
+alias gif='git fetch'
+alias gil='git log --graph --all --pretty=format:"%C(yellow)%h%Creset %Cgreen(%cr)%Creset -%C(auto)%d%Creset %s" --decorate'
+alias gils='git ls-files | less'
+alias gim='git merge --no-ff --log -e'
+alias gip='git push origin'
+alias gis='git status'
+alias github='ssh-add ~/.ssh/github'
+alias gco='git checkout'
+
+#Fast gource
+alias gc='gource --hide filenames --date-format "%d, %B %Y" --seconds-per-day .15 --highlight-all-users --auto-skip-seconds .5 --file-idle-time 0 --max-files 99999999 --multi-sampling --elasticity .1 -b 000000 --disable-progress --user-friction .2'
