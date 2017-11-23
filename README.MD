@@ -1,3 +1,7 @@
+## .vimrc
+
+File contains fix for arrows keys in VIm insert mode.
+Should be put at ```~/``` directory
 
 ## .git-alias
 
